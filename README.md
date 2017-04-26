@@ -1,6 +1,6 @@
 # npmdoc-synchronize
 
-#### api documentation for  [synchronize (v2.0.0)](http://alexeypetrushin.github.com/synchronize)  [![npm package](https://img.shields.io/npm/v/npmdoc-synchronize.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-synchronize) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-synchronize.svg)](https://travis-ci.org/npmdoc/node-npmdoc-synchronize)
+#### basic api documentation for  [synchronize (v2.0.0)](http://alexeypetrushin.github.com/synchronize)  [![npm package](https://img.shields.io/npm/v/npmdoc-synchronize.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-synchronize) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-synchronize.svg)](https://travis-ci.org/npmdoc/node-npmdoc-synchronize)
 
 #### Turns asynchronous function into synchronous
 
@@ -65,7 +65,8 @@
     "scripts": {
         "test": "mocha -R spec test/*.js"
     },
-    "version": "2.0.0"
+    "version": "2.0.0",
+    "bin": {}
 }
 ```
 
