@@ -173,15 +173,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync">
-            function <span class="apidocSignatureSpan">synchronize.</span>sync
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.synchronize.syncFn">
             function <span class="apidocSignatureSpan">synchronize.</span>syncFn
             <span class="apidocSignatureSpan">(fn)</span>
@@ -193,15 +184,6 @@
 
             <a class="apidocElementLiA" href="#apidoc.element.synchronize.syncWithDebug">
             function <span class="apidocSignatureSpan">synchronize.</span>syncWithDebug
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.toString">
-            function <span class="apidocSignatureSpan">synchronize.</span>toString
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -280,145 +262,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.synchronize.sync">module synchronize.sync</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.sync">
-            function <span class="apidocSignatureSpan">synchronize.</span>sync
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.Fiber">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>Fiber
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.asyncIt">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>asyncIt
-            <span class="apidocSignatureSpan">(cb)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.await">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>await
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.defer">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>defer
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.deferParallel">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>deferParallel
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.deferSerial">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>deferSerial
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.deferWithTimeout">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>deferWithTimeout
-            <span class="apidocSignatureSpan">(timeout, message)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.defers">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>defers
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.defersParallel">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>defersParallel
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.defersSerial">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>defersSerial
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.fiber">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>fiber
-            <span class="apidocSignatureSpan">(cb, done)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.parallel">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>parallel
-            <span class="apidocSignatureSpan">(cb)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.syncFn">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>syncFn
-            <span class="apidocSignatureSpan">(fn)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.synchronize.sync.syncWithDebug">
-            function <span class="apidocSignatureSpan">synchronize.sync.</span>syncWithDebug
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -475,7 +318,20 @@
   if(!cb) throw "no callback for async spec helper!"
   return function(done){sync.fiber(cb.bind(this), done)}
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      sync.await()
+    }, done)
+  })
+
+  beforeEach(function(){
+    this.someKey = 'some value'
+  })
+  it('should provide asyncIt helper for tests', sync.<span class="apidocCodeKeywordSpan">asyncIt</span>(function(){
+    expect(Fiber.current).to.exist
+    expect(this.someKey).to.eql('some value')
+  }))
+})
+...</pre></li>
     </ul>
 
 
@@ -488,7 +344,23 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">await = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // Using fibers only if there's active fiber and callback not provided explicitly.
+  if(Fiber.current &amp;&amp; (typeof arguments[arguments.length-1] !== 'function')){
+    // Calling asynchronous function with our special fiber-aware callback.
+    Array.prototype.push.call(arguments, sync.defer())
+    fn.apply(this, arguments)
+
+    // Waiting for asynchronous result.
+    return sync.<span class="apidocCodeKeywordSpan">await</span>()
+  }else{
+    // If there's no active fiber or callback provided explicitly we call original version.
+    return fn.apply(this, arguments)
+  }
+}
+
+// Marking function as synchronized.
+...</pre></li>
     </ul>
 
 
@@ -505,7 +377,23 @@
   if(Fiber.current._syncParallel) return sync.deferParallel()
   else return sync.deferSerial()
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // Preventing function to be synchronized twice.
+  if(fn._synchronized) return fn
+
+  var syncFn = function(){
+// Using fibers only if there's active fiber and callback not provided explicitly.
+if(Fiber.current &amp;&amp; (typeof arguments[arguments.length-1] !== 'function')){
+  // Calling asynchronous function with our special fiber-aware callback.
+  Array.prototype.push.call(arguments, sync.<span class="apidocCodeKeywordSpan">defer</span>())
+  fn.apply(this, arguments)
+
+  // Waiting for asynchronous result.
+  return sync.await()
+}else{
+  // If there's no active fiber or callback provided explicitly we call original version.
+  return fn.apply(this, arguments)
+...</pre></li>
     </ul>
 
 
@@ -547,7 +435,23 @@
     })
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+// Use it to wait for asynchronous callback.
+sync.await = Fiber.yield
+
+// Creates fiber-aware asynchronous callback resuming current fiber when it will be finished.
+sync.defer = function(){
+if(!Fiber.current) throw new Error("no current Fiber, defer can't be used without Fiber!")
+if(Fiber.current._syncParallel) return sync.<span class="apidocCodeKeywordSpan">deferParallel</span>()
+else return sync.deferSerial()
+}
+
+// Exactly the same as defer, but additionally it triggers an error if there's no response
+// on time.
+sync.deferWithTimeout = function(timeout, message){
+if(!Fiber.current) throw new Error("no current Fiber, deferWithTimeout can't be used without Fiber!")
+...</pre></li>
     </ul>
 
 
@@ -585,7 +489,23 @@
     })
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// Use it to wait for asynchronous callback.
+sync.await = Fiber.yield
+
+// Creates fiber-aware asynchronous callback resuming current fiber when it will be finished.
+sync.defer = function(){
+if(!Fiber.current) throw new Error("no current Fiber, defer can't be used without Fiber!")
+if(Fiber.current._syncParallel) return sync.deferParallel()
+else return sync.<span class="apidocCodeKeywordSpan">deferSerial</span>()
+}
+
+// Exactly the same as defer, but additionally it triggers an error if there's no response
+// on time.
+sync.deferWithTimeout = function(timeout, message){
+if(!Fiber.current) throw new Error("no current Fiber, deferWithTimeout can't be used without Fiber!")
+if(!timeout) throw new Error("no timeout provided!")
+...</pre></li>
     </ul>
 
 
@@ -618,7 +538,23 @@
     return defer.apply(this, arguments)
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+expect(result).to.eql('some value')
+done()
+    })
+  })
+
+  it('should abort on timeout', function(done){
+    sync.fiber(function(){
+waitAndReturn(10, null, 'some result', sync.<span class="apidocCodeKeywordSpan">deferWithTimeout</span>(100))
+expect(sync.await()).to.eql('some result')
+
+try{
+  waitAndReturn(10, null, 'some result', sync.deferWithTimeout(1))
+  expect(sync.await()).to.eql('some result')
+}catch(err){
+  expect(err.message).to.eql('defer timed out!')
+...</pre></li>
     </ul>
 
 
@@ -635,7 +571,23 @@
   if(Fiber.current._syncParallel) return sync.defersParallel.apply(sync, arguments)
   else return sync.defersSerial.apply(sync, arguments)
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+&lt;/pre&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;h2&gt;Multiple arguments in callbacks&lt;/h2&gt;
+          &lt;p&gt;
+            Synchronize.js accepts multiple arguments in callbacks using &lt;code&gt;sync.<span class="apidocCodeKeywordSpan
+">defers</span>()&lt;/code&gt;.
+          &lt;/p&gt;
+          &lt;div class='row'&gt;
+            &lt;div class='span5'&gt;
+              &lt;h3&gt;Multiple arguments in serial&lt;/h3&gt;
+&lt;pre class='prettyprint'&gt;
+var sync = require('synchronize')
+...</pre></li>
     </ul>
 
 
@@ -770,7 +722,23 @@
   fiber.run()
   fiber._started = true
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//   async = sync.asyncIt
+//   it('should pass', async(function(){
+//     ...
+//   }))
+//
+sync.asyncIt = function(cb){
+  if(!cb) throw "no callback for async spec helper!"
+  return function(done){sync.<span class="apidocCodeKeywordSpan">fiber</span>(cb.bind(this), done)}
+}
+
+// Same as `sync` but with verbose logging for every method invocation.
+// Ignore this method, it shouldn't be used unless you want to track down
+// tricky and complex bugs and need full information abouth how and when all
+// this async stuff has been called.
+var fiberIdCounter = 1
+...</pre></li>
     </ul>
 
 
@@ -806,33 +774,22 @@
     delete fiber._syncParallel
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
+    <li>example usage<pre class="apidocCodePre">...
+&lt;/pre&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
 
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync" id="apidoc.element.synchronize.sync">
-        function <span class="apidocSignatureSpan">synchronize.</span>sync
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">sync = function (){
-  if(arguments.length &gt; 1){
-    // Synchronizing functions of object.
-    var obj = arguments[0]
-    for(var i = 1; i &lt; arguments.length; i++){
-      var fname = arguments[i]
-      var fn = obj[fname]
-      if(!fn) throw new Error("object doesn't have '" + fname + "' function!")
-      obj[fname] = sync(fn)
-    }
-  }else{
-    return sync.syncFn(arguments[0])
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+          &lt;h2&gt;Parallel and serial operations&lt;/h2&gt;
+          &lt;p&gt;
+            Synchronize.js can run multiple operations in parallel using
+            &lt;code&gt;sync.<span class="apidocCodeKeywordSpan">parallel</span>()&lt;/code&gt;.
+          &lt;/p&gt;
+          &lt;div class='row'&gt;
+            &lt;div class='span5'&gt;
+              &lt;h3&gt;Async operations in serial&lt;/h3&gt;
+&lt;pre class='prettyprint'&gt;
+var sync = require('synchronize')
+...</pre></li>
     </ul>
 
 
@@ -868,7 +825,23 @@
 
   return syncFn
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    for(var i = 1; i &lt; arguments.length; i++){
+      var fname = arguments[i]
+      var fn = obj[fname]
+      if(!fn) throw new Error("object doesn't have '" + fname + "' function!")
+      obj[fname] = sync(fn)
+    }
+  }else{
+    return sync.<span class="apidocCodeKeywordSpan">syncFn</span>(arguments[0])
+  }
+}
+
+var nextTick = global.setImmediate || process.nextTick || function(cb) { setTimeout(cb, 0) }
+
+// Sometimes `Fiber` needed outside of `sync`.
+sync.Fiber = Fiber
+...</pre></li>
     </ul>
 
 
@@ -926,21 +899,6 @@
   }else{
     return sync.syncFn(arguments[0])
   }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.toString" id="apidoc.element.synchronize.toString">
-        function <span class="apidocSignatureSpan">synchronize.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1010,7 +968,23 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function run() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    // fiber._defered = false
+    if(fiber._syncIsTerminated) return
+    if(err){
+      // Resuming fiber and throwing error.
+      fiber.throwInto(err)
+    }else{
+      // Resuming fiber and returning result.
+      fiber.<span class="apidocCodeKeywordSpan">run</span>(result)
+    }
+  })
+}
+}
+
+sync.deferParallel = function(){
+var fiber = Fiber.current
+...</pre></li>
     </ul>
 
 
@@ -1023,161 +997,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function throwInto() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.synchronize.sync" id="apidoc.module.synchronize.sync">module synchronize.sync</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.sync" id="apidoc.element.synchronize.sync.sync">
-        function <span class="apidocSignatureSpan">synchronize.</span>sync
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">sync = function (){
-  if(arguments.length &gt; 1){
-    // Synchronizing functions of object.
-    var obj = arguments[0]
-    for(var i = 1; i &lt; arguments.length; i++){
-      var fname = arguments[i]
-      var fn = obj[fname]
-      if(!fn) throw new Error("object doesn't have '" + fname + "' function!")
-      obj[fname] = sync(fn)
-    }
-  }else{
-    return sync.syncFn(arguments[0])
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.Fiber" id="apidoc.element.synchronize.sync.Fiber">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>Fiber
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Fiber() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.asyncIt" id="apidoc.element.synchronize.sync.asyncIt">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>asyncIt
-        <span class="apidocSignatureSpan">(cb)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">asyncIt = function (cb){
-  if(!cb) throw "no callback for async spec helper!"
-  return function(done){sync.fiber(cb.bind(this), done)}
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.await" id="apidoc.element.synchronize.sync.await">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>await
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">await = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.defer" id="apidoc.element.synchronize.sync.defer">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>defer
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">defer = function (){
-  if(!Fiber.current) throw new Error("no current Fiber, defer can't be used without Fiber!")
-  if(Fiber.current._syncParallel) return sync.deferParallel()
-  else return sync.deferSerial()
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.deferParallel" id="apidoc.element.synchronize.sync.deferParallel">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>deferParallel
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">deferParallel = function (){
-  var fiber = Fiber.current
-  if(!fiber) throw new Error("no current Fiber, defer can't be used without Fiber!")
-  if(!fiber._syncParallel) throw new Error("invalid usage, should be called in parallel mode!")
-  var data = fiber._syncParallel
-
-  // Counting amount of `defer` calls.
-  data.called += 1
-  var resultIndex = data.called - 1
-
-  // Returning asynchronous callback.
-  return function(err, result){
-    // Wrapping in nextTick as a safe measure against not asynchronous usage.
-    nextTick(function(){
-      if(fiber._syncIsTerminated) return
-      // Error in any of parallel call will result in aborting all of the calls.
-      if(data.errorHasBeenThrown) return
-      if(err){
-        data.errorHasBeenThrown = true
-        // Resuming fiber and throwing error.
-        fiber.throwInto(err)
-      }else{
-        data.returned += 1
-        data.results[resultIndex] = result
-        // Resuming fiber and returning result when all callbacks finished.
-        if(data.returned == data.called) fiber.run(data.results)
-      }
-    })
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.deferSerial" id="apidoc.element.synchronize.sync.deferSerial">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>deferSerial
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">deferSerial = function (){
-  var fiber = Fiber.current
-  if(!fiber) throw new Error("no current Fiber, defer can't be used without Fiber!")
-  // if(fiber._defered) throw new Error("invalid usage, should be clear previous defer!")
-  // fiber._defered = true
-  // Prevent recursive call
-  var called = false
-  // Returning asynchronous callback.
-  return function(err, result){
-    if (called) throw new Error("defer can't be used twice!")
-    called = true
+    <li>example usage<pre class="apidocCodePre">...
 
     // Wrapping in nextTick as a safe measure against not asynchronous usage.
     nextTick(function(){
@@ -1185,331 +1005,15 @@
       if(fiber._syncIsTerminated) return
       if(err){
         // Resuming fiber and throwing error.
-        fiber.throwInto(err)
+        fiber.<span class="apidocCodeKeywordSpan">throwInto</span>(err)
       }else{
         // Resuming fiber and returning result.
         fiber.run(result)
       }
     })
   }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.deferWithTimeout" id="apidoc.element.synchronize.sync.deferWithTimeout">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>deferWithTimeout
-        <span class="apidocSignatureSpan">(timeout, message)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">deferWithTimeout = function (timeout, message){
-  if(!Fiber.current) throw new Error("no current Fiber, deferWithTimeout can't be used without Fiber!")
-  if(!timeout) throw new Error("no timeout provided!")
-  if(Fiber.current._syncParallel) throw new Error("deferWithTimeout can't be used in parallel!")
-
-  var defer = this.defer()
-  var error = new Error(message || "defer timed out!")
-  var called = false
-  var d = setTimeout(function(){
-    if(called) return
-    called = true
-    defer(error)
-  }, timeout)
-
-  return function(){
-    if(called) return
-    called = true
-    clearTimeout(d)
-    return defer.apply(this, arguments)
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.defers" id="apidoc.element.synchronize.sync.defers">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>defers
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">defers = function (){
-  if(!Fiber.current) throw new Error("no current Fiber, defer can't be used without Fiber!")
-  if(Fiber.current._syncParallel) return sync.defersParallel.apply(sync, arguments)
-  else return sync.defersSerial.apply(sync, arguments)
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.defersParallel" id="apidoc.element.synchronize.sync.defersParallel">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>defersParallel
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">defersParallel = function (){
-  var fiber = Fiber.current
-  if(!fiber) throw new Error("no current Fiber, defer can't be used without Fiber!")
-  if(!fiber._syncParallel) throw new Error("invalid usage, should be called in parallel mode!")
-  var data = fiber._syncParallel
-  // Counting amount of `defer` calls.
-  data.called += 1
-  var resultIndex = data.called - 1
-
-  var kwds = Array.prototype.slice.call(arguments)
-  // Returning asynchronous callback.
-  return function(err) {
-    // Wrapping in nextTick as a safe measure against not asynchronous usage.
-    var args = Array.prototype.slice.call(arguments, 1)
-    nextTick(function(){
-      if(fiber._syncIsTerminated) return
-
-      // Error in any of parallel call will result in aborting all of the calls.
-      if(data.errorHasBeenThrown) return
-      if (err) {
-        data.errorHasBeenThrown = true
-        // Resuming fiber and throwing error.
-        fiber.throwInto(err)
-      }
-      var results;
-      if(!kwds.length){
-        results = args
-      } else {
-        results = {}
-        kwds.forEach(function(kwd, i){
-          results[kwd]=args[i]
-        })
-      }
-      data.returned += 1
-      data.results[resultIndex] = results
-      if(data.returned == data.called) fiber.run(data.results)
-    })
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.defersSerial" id="apidoc.element.synchronize.sync.defersSerial">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>defersSerial
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">defersSerial = function (){
-  var fiber = Fiber.current;
-  if(!fiber) throw new Error("no current Fiber, defer can't be used without Fiber!")
-  // if(fiber._defered) throw new Error("invalid usage, should be clear previous defer!")
-  // fiber._defered = true
-
-  var kwds = Array.prototype.slice.call(arguments)
-
-  // Prevent recursive call
-  var called = false
-  // Returning asynchronous callback.
-  return function(err) {
-    if (called) throw new Error("defer can't be used twice!")
-    called = true
-    // Wrapping in nextTick as a safe measure against not asynchronous usage.
-    var args = Array.prototype.slice.call(arguments, 1)
-    nextTick(function(){
-      // fiber._defered = false
-      if(fiber._syncIsTerminated) return
-      if (err) {
-        // Resuming fiber and throwing error.
-        fiber.throwInto(err)
-      } else {
-        var results;
-        if(!kwds.length){
-          results = args
-        } else {
-          results = {}
-          kwds.forEach(function(kwd, i){
-            results[kwd]=args[i]
-          })
-        }
-        fiber.run(results)
-      }
-    })
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.fiber" id="apidoc.element.synchronize.sync.fiber">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>fiber
-        <span class="apidocSignatureSpan">(cb, done)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">fiber = function (cb, done){
-  var that = this
-  var fiber = Fiber(function(){
-    // Prevent restart fiber
-    if (Fiber.current._started) return
-    if (done) {
-      var result
-      try {
-        result = cb.call(that)
-        Fiber.current._syncIsTerminated = true
-      } catch (error){
-        return done(error)
-      }
-      done(null, result)
-    } else {
-      // Don't catch errors if done not provided!
-      cb.call(that)
-      Fiber.current._syncIsTerminated = true
-    }
-  })
-  fiber.run()
-  fiber._started = true
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.parallel" id="apidoc.element.synchronize.sync.parallel">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>parallel
-        <span class="apidocSignatureSpan">(cb)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">parallel = function (cb){
-  var fiber = Fiber.current
-  if(!fiber) throw new Error("no current Fiber, defer can't be used without Fiber!")
-
-  // Enabling `defer` calls to be performed in parallel.
-  // There's an important note - error in any parallel call will result in aborting
-  // all of the parallel calls.
-  fiber._syncParallel = {called: 0, returned: 0, results: [], errorHasBeenThrown: false}
-  try{
-    cb.call(this)
-  }finally{
-    // If neither `defer` nor `defers` were called within the callback, we need
-    // to run the fiber ourselves or else the fiber will unwind when `await` is called.
-    // This might happen if the user intended to enumerate an array within the
-    // callback, calling `defer` once per array item, but the array was empty.
-    if (!fiber._syncParallel.called) {
-      nextTick(function(){
-        // Return an empty array to represent that there were no results.
-        if(!fiber._syncIsTerminated) fiber.run([])
-      })
-    }
-    delete fiber._syncParallel
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.syncFn" id="apidoc.element.synchronize.sync.syncFn">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>syncFn
-        <span class="apidocSignatureSpan">(fn)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">syncFn = function (fn){
-  // Preventing function to be synchronized twice.
-  if(fn._synchronized) return fn
-
-  var syncFn = function(){
-    // Using fibers only if there's active fiber and callback not provided explicitly.
-    if(Fiber.current &amp;&amp; (typeof arguments[arguments.length-1] !== 'function')){
-      // Calling asynchronous function with our special fiber-aware callback.
-      Array.prototype.push.call(arguments, sync.defer())
-      fn.apply(this, arguments)
-
-      // Waiting for asynchronous result.
-      return sync.await()
-    }else{
-      // If there's no active fiber or callback provided explicitly we call original version.
-      return fn.apply(this, arguments)
-    }
-  }
-
-  // Marking function as synchronized.
-  syncFn._synchronized = true
-
-  return syncFn
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.synchronize.sync.syncWithDebug" id="apidoc.element.synchronize.sync.syncWithDebug">
-        function <span class="apidocSignatureSpan">synchronize.sync.</span>syncWithDebug
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">syncWithDebug = function (){
-  if(arguments.length &gt; 1){
-    // Synchronizing functions of object.
-    var obj = arguments[0]
-    for(var i = 1; i &lt; arguments.length; i++){
-      (function(fname){
-        var fn = obj[fname]
-        if(!fn) throw new Error("object doesn't have '" + fname + "' function!")
-        var syncedFn = sync(fn)
-        obj[fname] = function(){
-          if(Fiber.current &amp;&amp; Fiber.current._fiberId === undefined){
-            Fiber.current._fiberId = fiberIdCounter
-            fiberIdCounter = fiberIdCounter + 1
-            Fiber.current._callbackLevel = 0
-          }
-
-          var fiberId = '-'
-          if(Fiber.current){
-            fiberId = Fiber.current._fiberId
-            Fiber.current._callbackLevel = Fiber.current._callbackLevel + 1
-          }
-
-          var indent = '    '
-          if(Fiber.current)
-            for(var j = 0; j &lt; Fiber.current._callbackLevel; j++) indent = indent + '  '
-
-          console.log(fiberId + indent + this.constructor.name + '.' +
-          fname + " called", JSON.stringify(arguments))
-
-          var result
-          try{
-            result = syncedFn.apply(this, arguments)
-          }finally{
-            console.log(fiberId + indent + this.constructor.name + '.' +
-            fname + " finished")
-
-            if(Fiber.current)
-              Fiber.current._callbackLevel = Fiber.current._callbackLevel - 1
-          }
-          return result
-        }
-      })(arguments[i])
-    }
-  }else{
-    return sync.syncFn(arguments[0])
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+}
+...</pre></li>
     </ul>
 
 
